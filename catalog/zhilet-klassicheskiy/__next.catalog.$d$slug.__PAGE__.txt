@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[21252,["/cinematic-store/_next/static/chunks/0lmyw9x98nev5.js","/cinematic-store/_next/static/chunks/0d3shmwh5_nmn.js","/cinematic-store/_next/static/chunks/0tuq75v67pjjj.js"],"default"]
-3:I[97367,["/cinematic-store/_next/static/chunks/0lmyw9x98nev5.js","/cinematic-store/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+2:I[21252,["/cinematic-store/_next/static/chunks/020dok_firmam.js","/cinematic-store/_next/static/chunks/0d3shmwh5_nmn.js","/cinematic-store/_next/static/chunks/0tuq75v67pjjj.js"],"default"]
+3:I[97367,["/cinematic-store/_next/static/chunks/020dok_firmam.js","/cinematic-store/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"slug":"zhilet-klassicheskiy"}],[["$","script","script-0",{"src":"/cinematic-store/_next/static/chunks/0tuq75v67pjjj.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9eJJ8qrBWfW5Ky0hW0Bg5"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"slug":"zhilet-klassicheskiy"}],[["$","script","script-0",{"src":"/cinematic-store/_next/static/chunks/0tuq75v67pjjj.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"X-zmx0p8hDO67m-R4VGXh"}
 5:null
