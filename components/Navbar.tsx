@@ -60,7 +60,7 @@ export default function Navbar() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          scrolled ? "bg-white border-b border-gray-200" : "bg-transparent"
+          scrolled ? "bg-white" : "bg-transparent"
         }`}
       >
         <div className="max-w-screen-xl mx-auto px-6 h-14 grid grid-cols-3 items-center">
