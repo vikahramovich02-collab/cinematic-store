@@ -95,13 +95,25 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-gray-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+        <div className="mt-12 pt-6 border-t border-gray-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
           <p className="text-[10px] text-gray-400 tracking-wide">
             © 2025 CINEMATIC. Все права защищены.
           </p>
-          <p className="text-[10px] text-gray-400 tracking-wide">
-            Минск, Беларусь
-          </p>
+          <div className="flex flex-wrap gap-4">
+            {[
+              ["Политика конфиденциальности", "/privacy"],
+              ["Пользовательское соглашение", "/terms"],
+              ["Политика cookie", "/cookies"],
+            ].map(([label, href]) => (
+              <Link
+                key={href}
+                href={href}
+                className="text-[10px] text-gray-400 hover:text-black transition-colors tracking-wide"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

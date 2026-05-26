@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CookieBanner from "@/components/CookieBanner";
 import { CartProvider } from "@/lib/cart-context";
 
 const geist = Geist({
@@ -34,6 +35,7 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <CookieBanner />
         </CartProvider>
       </body>
     </html>
