@@ -43,7 +43,7 @@ export default function HeroLogo() {
       // Белый фон навбара — инвертируем лого в чёрный
       const onWhiteBg = scrollY > window.innerHeight * 0.95;
       if (onWhiteBg) {
-        el.style.filter = "invert(1)";
+        el.style.filter = "invert(1) blur(0.5px)";
       } else {
         const blur = lerp(4, 0.5, p);
         el.style.filter = `blur(${blur}px) brightness(${lerp(1.2, 1, p)})`;
