@@ -45,7 +45,7 @@ export default function HeroLogo() {
       if (onWhiteBg) {
         el.style.filter = "invert(1)";
       } else {
-        const blur = lerp(4, 0, p); // размытие исчезает при анимации к навбару
+        const blur = lerp(4, 1.5, p); // размытие остаётся небольшим в навбаре
         el.style.filter = `blur(${blur}px) brightness(${lerp(1.2, 1, p)})`;
       }
     };
