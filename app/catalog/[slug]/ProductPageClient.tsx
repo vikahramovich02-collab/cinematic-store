@@ -118,7 +118,7 @@ export default function ProductPageClient({ slug }: { slug: string }) {
 
             <button
               onClick={handleAdd}
-              className="w-full bg-black text-white text-[11px] tracking-[0.25em] font-medium py-4 hover:bg-gray-900 transition-colors mb-4"
+              className="btn-glitch w-full justify-center bg-black text-white text-[11px] tracking-[0.25em] font-medium py-4 hover:bg-gray-900 transition-colors mb-4"
             >
               ДОБАВИТЬ В КОРЗИНУ
             </button>
@@ -127,7 +127,7 @@ export default function ProductPageClient({ slug }: { slug: string }) {
               href="https://t.me/cinematic_brand"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full border border-gray-200 text-black text-[11px] tracking-[0.2em] font-medium py-4 text-center hover:border-black transition-colors mb-8 block"
+              className="btn-glitch w-full justify-center border border-gray-200 text-black text-[11px] tracking-[0.2em] font-medium py-4 text-center hover:border-black transition-colors mb-8 block"
             >
               НАПИСАТЬ В TELEGRAM
             </a>

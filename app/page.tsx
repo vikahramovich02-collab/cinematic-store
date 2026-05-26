@@ -59,7 +59,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/catalog"
-              className="inline-flex items-center gap-3 border border-white/60 text-white text-[11px] tracking-[0.22em] font-medium px-7 py-4 hover:border-white hover:bg-white/10 transition-colors"
+              className="btn-glitch border border-white/60 text-white text-[11px] tracking-[0.22em] font-medium px-7 py-4 hover:border-white hover:bg-white/10 transition-colors"
             >
               СМОТРЕТЬ КОЛЛЕКЦИЮ
               <ArrowRight size={14} />
@@ -287,7 +287,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/catalog"
-            className="inline-flex items-center gap-3 border border-white/50 text-white text-[11px] tracking-[0.2em] font-medium px-8 py-4 hover:border-white hover:bg-white hover:text-black transition-all"
+            className="btn-glitch border border-white/50 text-white text-[11px] tracking-[0.2em] font-medium px-8 py-4 hover:border-white hover:bg-white hover:text-black transition-all"
           >
             НАЧАТЬ СБОРКУ ОБРАЗА <ArrowRight size={14} />
           </Link>
