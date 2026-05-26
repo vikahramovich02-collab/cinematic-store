@@ -22,9 +22,14 @@ export default function ContactsPage() {
               <MapPin size={16} className="shrink-0 mt-0.5 text-gray-400" />
               <div>
                 <p className="text-[10px] tracking-[0.2em] font-semibold mb-2">АДРЕС</p>
-                <p className="text-sm text-gray-700 leading-relaxed">
+                <a
+                  href="https://yandex.by/maps/?text=Минск+ул+Комсомольская+18"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-700 leading-relaxed hover:text-black underline underline-offset-2 decoration-gray-300 hover:decoration-black transition-colors"
+                >
                   Минск, ул. Комсомольская 18, пом. 205
-                </p>
+                </a>
                 <p className="text-xs text-gray-400 mt-1">
                   (исторический центр города)
                 </p>
