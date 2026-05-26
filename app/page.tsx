@@ -191,7 +191,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── BRAND STORY ─────────────────────────────────────────────────── */}
-      <section className="bg-gray-50 py-20 md:py-28">
+      <section className="bg-white py-20 md:py-28">
         <div className="max-w-screen-xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div>
