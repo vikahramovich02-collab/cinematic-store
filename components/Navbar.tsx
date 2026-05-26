@@ -20,8 +20,8 @@ export default function Navbar() {
       const y = window.scrollY;
       // На главной — белый фон только после выхода за герой (100vh)
       // На остальных страницах — после 40px
-      const threshold = isHome ? window.innerHeight * 0.95 : 40;
-      setScrolled(y > threshold);
+      if (!isHome) return;
+      setScrolled(y > window.innerHeight * 0.95);
 
       if (!isHome) return;
       // Лого появляется когда HeroLogo заканчивает анимацию
@@ -32,7 +32,7 @@ export default function Navbar() {
 
     if (!isHome) {
       setLogoVisible(true);
-      setScrolled(window.scrollY > 40);
+      setScrolled(true);
     } else {
       setLogoVisible(false);
       setScrolled(window.scrollY > window.innerHeight * 0.95);
@@ -88,14 +88,13 @@ export default function Navbar() {
           {/* CENTER: logo — только на не-главных страницах (на главной живёт HeroLogo) */}
           <div className="flex justify-center">
             {!isHome && (
-              <Link href="/">
-                <img
-                  src="/logo.png"
-                  alt="CINEMATIC"
-                  className="h-8 w-auto object-contain transition-all duration-300"
-                  style={{ filter: scrolled ? "invert(1)" : "none" }}
-                  draggable={false}
-                />
+              <Link
+                href="/"
+                className={`text-[15px] font-bold tracking-[0.25em] transition-colors no-underline ${
+                  scrolled ? "text-black" : "text-white"
+                }`}
+              >
+                CINEMATIC
               </Link>
             )}
           </div>
