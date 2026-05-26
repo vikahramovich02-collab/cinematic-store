@@ -3,6 +3,7 @@ import { products, capsules } from "@/lib/data";
 import ProductCard from "@/components/ProductCard";
 import HeroLogo from "@/components/HeroLogo";
 import { ArrowRight } from "lucide-react";
+import { asset } from "@/lib/assets";
 
 export default function HomePage() {
   const featured = products.slice(0, 4);
@@ -21,7 +22,7 @@ export default function HomePage() {
           {/* Left panel */}
           <div className="relative w-1/2 h-full overflow-hidden">
             <img
-              src="/hero-1.jpg"
+              src={asset("/hero-1.jpg")}
               alt=""
               className="absolute inset-0 w-full h-full object-cover object-center"
             />
@@ -32,7 +33,7 @@ export default function HomePage() {
           {/* Right panel */}
           <div className="relative w-1/2 h-full overflow-hidden">
             <img
-              src="/hero-2.jpg"
+              src={asset("/hero-2.jpg")}
               alt=""
               className="absolute inset-0 w-full h-full object-cover object-center"
             />
@@ -162,7 +163,7 @@ export default function HomePage() {
               >
                 {photos[i] ? (
                   <img
-                    src={photos[i]}
+                    src={asset(photos[i])}
                     alt={cap.title}
                     className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                   />

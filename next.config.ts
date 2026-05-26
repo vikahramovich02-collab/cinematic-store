@@ -1,12 +1,16 @@
 import type { NextConfig } from "next";
 
 const isProd = process.env.GITHUB_ACTIONS === "true";
+const base = isProd ? "/cinematic-store" : "";
 
 const nextConfig: NextConfig = {
   output: "export",
   images: { unoptimized: true },
-  basePath: isProd ? "/cinematic-store" : "",
-  assetPrefix: isProd ? "/cinematic-store" : "",
+  basePath: base,
+  assetPrefix: base,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: base,
+  },
 };
 
 export default nextConfig;

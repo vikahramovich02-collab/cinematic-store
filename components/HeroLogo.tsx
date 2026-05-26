@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import { asset } from "@/lib/assets";
 
 function easeInOut(t: number) {
   return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
@@ -69,7 +70,7 @@ export default function HeroLogo() {
       }}
     >
       <img
-        src="/logo.png"
+        src={asset("/logo.png")}
         alt="CINEMATIC"
         className="w-full h-auto"
         style={{ mixBlendMode: "screen" }}
