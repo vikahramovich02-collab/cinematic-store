@@ -9,11 +9,11 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const { itemCount, dispatch } = useCart();
-  const [scrolled, setScrolled] = useState(false);
-  const [logoVisible, setLogoVisible] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const [scrolled, setScrolled] = useState(!isHome);
+  const [logoVisible, setLogoVisible] = useState(!isHome);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
