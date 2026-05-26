@@ -2,5 +2,5 @@
 2:I[21252,["/cinematic-store/_next/static/chunks/0-oq~xatoufj3.js","/cinematic-store/_next/static/chunks/0d3shmwh5_nmn.js","/cinematic-store/_next/static/chunks/0tuq75v67pjjj.js"],"default"]
 3:I[97367,["/cinematic-store/_next/static/chunks/0-oq~xatoufj3.js","/cinematic-store/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"slug":"bryuki-klassicheskie"}],[["$","script","script-0",{"src":"/cinematic-store/_next/static/chunks/0tuq75v67pjjj.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"_TFTFoXU3sBZ1IT5goCqj"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"slug":"bryuki-klassicheskie"}],[["$","script","script-0",{"src":"/cinematic-store/_next/static/chunks/0tuq75v67pjjj.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"1HyXwP98drwcyHeElvEQ0"}
 5:null
