@@ -16,7 +16,7 @@ export default function HeroLogo() {
 
   useEffect(() => {
     const NAVBAR_H = 56;
-    const NAVBAR_LOGO_W = 160; // px — размер в навбаре
+    const NAVBAR_LOGO_W = 80; // px — размер в навбаре
 
     const update = () => {
       if (!ref.current) return;
