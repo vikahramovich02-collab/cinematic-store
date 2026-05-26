@@ -102,11 +102,13 @@ export default function ContactsPage() {
           {/* Map */}
           <div className="w-full aspect-square md:aspect-auto md:h-[480px] overflow-hidden">
             <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=27.5430%2C53.8987%2C27.5630%2C53.9087&layer=mapnik&marker=53.9037%2C27.5530"
+              src="https://maps.google.com/maps?q=Комсомольская+18,+Минск,+Беларусь&hl=ru&z=16&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, display: "block" }}
               loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
               title="Карта"
             />
           </div>
