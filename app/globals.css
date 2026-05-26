@@ -69,26 +69,22 @@ body {
   100% { background-position: -200% 0; }
 }
 
-/* Glitch-blur button hover */
+/* Blur + scale button hover */
 .btn-glitch {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
   transition:
-    letter-spacing 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 0.35s ease,
-    opacity 0.35s ease;
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.4s ease;
 }
 .btn-glitch:hover {
-  letter-spacing: 0.45em;
-  filter: blur(1.2px) brightness(1.15);
+  transform: scale(1.06);
+  filter: blur(1px) brightness(1.2);
 }
-.btn-glitch:hover svg {
-  transform: translateX(4px);
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.btn-glitch svg {
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+.btn-glitch:active {
+  transform: scale(0.98);
+  filter: none;
 }
 
 /* Cart drawer */
