@@ -99,29 +99,16 @@ export default function ContactsPage() {
             </div>
           </div>
 
-          {/* Map placeholder */}
-          <div>
-            <div
-              className="w-full aspect-square md:aspect-auto md:h-[480px] bg-gray-100 relative overflow-hidden flex items-center justify-center"
-              style={{
-                background: "linear-gradient(135deg, #e8e8e8 0%, #d4d4d4 100%)",
-              }}
-            >
-              <div className="text-center">
-                <MapPin size={24} className="text-gray-400 mx-auto mb-3" />
-                <p className="text-[11px] text-gray-400 tracking-[0.15em]">
-                  КАРТА
-                </p>
-                <p className="text-[10px] text-gray-300 mt-1 tracking-wide">
-                  Комсомольская 18, Минск
-                </p>
-              </div>
-              <div className="absolute inset-0 grid grid-cols-8 grid-rows-8 opacity-10">
-                {Array.from({ length: 64 }).map((_, i) => (
-                  <div key={i} className="border border-gray-500" />
-                ))}
-              </div>
-            </div>
+          {/* Map */}
+          <div className="w-full aspect-square md:aspect-auto md:h-[480px] overflow-hidden">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=27.5430%2C53.8987%2C27.5630%2C53.9087&layer=mapnik&marker=53.9037%2C27.5530"
+              width="100%"
+              height="100%"
+              style={{ border: 0, display: "block" }}
+              loading="lazy"
+              title="Карта"
+            />
           </div>
         </div>
 
