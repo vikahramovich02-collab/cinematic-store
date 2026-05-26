@@ -35,14 +35,14 @@ export default function HeroLogo() {
       const endTop = NAVBAR_H / 2;
       const top = lerp(startTop, endTop, p);
 
-      // Яркость: чуть ярче на герое
-      const brightness = lerp(1.15, 1, p);
-
       const el = ref.current;
       el.style.width = `${width}px`;
       el.style.top = `${top}px`;
-      el.style.opacity = "1"; // никогда не исчезает — просто заезжает и остаётся
-      el.style.filter = `brightness(${brightness})`;
+      el.style.opacity = "1";
+
+      // Белый фон навбара — инвертируем лого в чёрный
+      const onWhiteBg = scrollY > window.innerHeight * 0.95;
+      el.style.filter = onWhiteBg ? "invert(1)" : `brightness(${lerp(1.15, 1, p)})`;
     };
 
     window.addEventListener("scroll", update, { passive: true });
