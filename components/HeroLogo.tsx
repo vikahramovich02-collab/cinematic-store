@@ -70,10 +70,9 @@ export default function HeroLogo() {
       }}
     >
       <img
-        src={asset("/logo.png")}
+        src={asset("/cinematic.svg")}
         alt="CINEMATIC"
         className="w-full h-auto"
-        style={{ mixBlendMode: "screen" }}
         draggable={false}
       />
     </Link>

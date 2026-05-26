@@ -88,13 +88,14 @@ export default function Navbar() {
           {/* CENTER: logo — только на не-главных страницах (на главной живёт HeroLogo) */}
           <div className="flex justify-center">
             {!isHome && (
-              <Link
-                href="/"
-                className={`text-[15px] font-bold tracking-[0.25em] transition-colors no-underline ${
-                  scrolled ? "text-black" : "text-white"
-                }`}
-              >
-                CINEMATIC
+              <Link href="/">
+                <img
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/cinematic.svg`}
+                  alt="CINEMATIC"
+                  className="h-4 w-auto transition-all duration-300"
+                  style={{ filter: scrolled ? "invert(1)" : "none" }}
+                  draggable={false}
+                />
               </Link>
             )}
           </div>
