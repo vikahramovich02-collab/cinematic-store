@@ -42,7 +42,12 @@ export default function HeroLogo() {
 
       // Белый фон навбара — инвертируем лого в чёрный
       const onWhiteBg = scrollY > window.innerHeight * 0.95;
-      el.style.filter = onWhiteBg ? "invert(1)" : `brightness(${lerp(1.15, 1, p)})`;
+      if (onWhiteBg) {
+        el.style.filter = "invert(1)";
+      } else {
+        const blur = lerp(4, 0, p); // размытие исчезает при анимации к навбару
+        el.style.filter = `blur(${blur}px) brightness(${lerp(1.2, 1, p)})`;
+      }
     };
 
     window.addEventListener("scroll", update, { passive: true });
