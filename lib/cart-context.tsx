@@ -18,6 +18,7 @@ type CartAction =
   | { type: "ADD"; product: Product; size: string }
   | { type: "REMOVE"; productId: string; size: string }
   | { type: "UPDATE_QTY"; productId: string; size: string; qty: number }
+  | { type: "CLEAR" }
   | { type: "OPEN" }
   | { type: "CLOSE" };
 
@@ -68,6 +69,8 @@ function cartReducer(state: CartState, action: CartAction): CartState {
             : i
         ),
       };
+    case "CLEAR":
+      return { ...state, items: [] };
     case "OPEN":
       return { ...state, open: true };
     case "CLOSE":

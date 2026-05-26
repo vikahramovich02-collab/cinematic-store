@@ -3,10 +3,12 @@
 import { X, Minus, Plus, Trash2 } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
 import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function CartDrawer() {
   const { state, dispatch, total, itemCount } = useCart();
   const isOpen = state.open;
+  const router = useRouter();
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -124,17 +126,12 @@ export default function CartDrawer() {
                 {total.toLocaleString("ru-BY")} BYN
               </span>
             </div>
-            <a
-              href="https://t.me/cinematic_brand"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => { dispatch({ type: "CLOSE" }); router.push("/checkout"); }}
               className="block w-full bg-black text-white text-center text-xs tracking-[0.2em] py-4 hover:bg-gray-900 transition-colors"
             >
               ОФОРМИТЬ ЗАКАЗ
-            </a>
-            <p className="text-[11px] text-gray-400 text-center leading-relaxed">
-              Нажимая «Оформить заказ», вы перейдёте в Telegram для согласования
-            </p>
+            </button>
           </div>
         )}
       </div>
