@@ -92,7 +92,7 @@ export default function Navbar() {
                 <img
                   src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/cinematic.svg`}
                   alt="CINEMATIC"
-                  className="w-20 h-auto transition-all duration-300"
+                  className="h-3 w-auto transition-all duration-300"
                   style={{ filter: "invert(1)" }}
                   draggable={false}
                 />
