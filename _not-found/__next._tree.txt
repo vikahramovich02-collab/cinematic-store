@@ -1,2 +1,2 @@
-:HL["/cinematic-store/_next/static/chunks/0li6ta8~k18g~.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"QS6QOxPlQtl_SNfcTmw59"}
+:HL["/cinematic-store/_next/static/chunks/0rxbicc.rf.ak.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"cqT7s0V65_uEuVobhJYQ1"}
