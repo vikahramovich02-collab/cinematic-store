@@ -20,7 +20,7 @@ export default function CookieBanner() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 px-6 py-3 flex items-center justify-between gap-6">
+    <div className="fixed bottom-16 left-0 right-0 z-50 bg-white border-t border-b border-gray-200 px-6 py-3 flex items-center justify-between gap-6">
       <p className="text-[11px] text-gray-500 leading-relaxed">
         Мы используем cookie для корректной работы сайта. Подробнее в{" "}
         <Link href="/cookies" className="underline underline-offset-2 hover:text-black transition-colors">
